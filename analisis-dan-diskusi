@@ -1,0 +1,14 @@
+•	Analisis
+1.	Bagaimana performa agen dalam mengontrol environment CartPole?
+Agen RL pada CartPole umumnya bisa belajar menjaga tiang tetap seimbang di atas kereta dengan baik. Awalnya agen sering gagal karena masih coba-coba, tetapi setelah beberapa episode pelatihan, agen bisa menemukan strategi yang stabil sehingga tiang bisa bertahan tegak lebih lama.
+2.	Bagaimana perubahan parameter (gamma, epsilon, learning rate) mempengaruhi kinerja agen?
+Gamma yang tinggi membuat agen lebih fokus pada hasil jangka panjang, sedangkan gamma rendah membuat agen hanya mengejar reward cepat. Epsilon tinggi berarti agen lebih banyak coba-coba, sedangkan epsilon rendah membuat agen lebih sering memakai strategi yang sudah bagus; biasanya dipakai epsilon decay agar seimbang. Learning rate tinggi membuat agen belajar cepat tapi bisa tidak stabil, sedangkan learning rate rendah membuat pembelajaran lebih lambat tapi stabil.
+3.	Apa tantangan yang muncul selama pelatihan agen RL?
+Tantangan utamanya adalah menjaga keseimbangan antara eksplorasi dan eksploitasi. Kalau terlalu banyak eksplorasi, agen lama belajar; kalau terlalu cepat eksploitasi, agen bisa terjebak pada strategi yang kurang optimal. Selain itu, pembelajaran bisa tidak stabil dan semakin sulit kalau environment makin kompleks.
+•	Diskusi
+1.	Apa perbedaan utama antara Reinforcement Learning dan Supervised Learning dalam sistem kendali?
+Supervised learning belajar dari data yang sudah ada jawabannya, sedangkan reinforcement learning belajar lewat trial and error dari reward atau hukuman. Jadi RL lebih cocok untuk pengambilan keputusan adaptif, sementara supervised cocok untuk prediksi.
+2.	Bagaimana strategi eksplorasi dan eksploitasi dapat dioptimalkan pada agen RL?
+Strateginya bisa dengan epsilon-greedy yang perlahan diturunkan (decay), sehingga awalnya banyak coba-coba lalu makin fokus pada strategi terbaik. Bisa juga pakai softmax atau metode lain agar agen tetap seimbang antara coba-coba dan memanfaatkan pengetahuan.
+3.	Potensi aplikasi lain dari RL dalam sistem kendali nyata apa saja yang dapat diimplementasikan?
+RL bisa dipakai di banyak bidang, misalnya untuk kendaraan otonom agar bisa mengambil keputusan di jalan, robot industri yang bisa beradaptasi saat bekerja, pengaturan lalu lintas cerdas, optimasi distribusi energi, hingga kontrol drone untuk pemetaan dan pengiriman barang.
